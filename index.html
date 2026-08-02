@@ -4,34 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudio Pizarro | Portafolio</title>
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
+    <!-- Iconos FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Navegación -->
     <nav>
         <div class="logo">Portafolio</div>
         <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#sobre-mi">Sobre Mí</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#inicio" data-es="Inicio" data-en="Home">Inicio</a></li>
+            <li><a href="#sobre-mi" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a></li>
+            <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a></li>
         </ul>
+        <!-- Botón Selector de Idioma -->
+        <button id="lang-btn" class="lang-btn">EN</button>
     </nav>
 
+    <!-- Header / Hero Section -->
     <header id="inicio" class="hero">
-        <h1>Hola, soy <span>Claudio Pizarro</span></h1>
-        <h2>Analista Programador</h2>
-        <p>Especializado en desarrollo de software, gestión de sistemas y administración de bases de datos.</p>
+        <h1><span data-es="Hola, soy" data-en="Hi, I'm">Hola, soy</span> <span class="highlight">Claudio Pizarro</span></h1>
+        <h2 data-es="Analista Programador" data-en="Programmer Analyst">Analista Programador</h2>
+        <p data-es="Especializado en desarrollo de software, gestión de sistemas y administración de bases de datos." data-en="Specialized in software development, systems management, and database administration.">Especializado en desarrollo de software, gestión de sistemas y administración de bases de datos.</p>
         <div class="btn-group">
-            <a href="#proyectos" class="btn">Ver Proyectos</a>
-            <a href="#contacto" class="btn-outline">Contacto</a>
+            <a href="#proyectos" class="btn" data-es="Ver Proyectos" data-en="View Projects">Ver Proyectos</a>
+            <a href="#contacto" class="btn-outline" data-es="Contacto" data-en="Contact">Contacto</a>
         </div>
     </header>
 
+    <!-- Sobre Mí -->
     <section id="sobre-mi">
-        <h2 class="section-title">Sobre Mí</h2>
-        <p class="sobre-mi-texto">Analista Programador enfocado en construir soluciones tecnológicas eficientes, limpias y escalables. Me apasiona la resolución de problemas lógicos, el desarrollo de sistemas y la administración de bases de datos.</p>
+        <h2 class="section-title" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
+        <p class="sobre-mi-texto" data-es="Analista Programador enfocado en construir soluciones tecnológicas eficientes, limpias y escalables. Me apasiona la resolución de problemas lógicos, el desarrollo de sistemas y la administración de bases de datos." data-en="Programmer Analyst focused on building efficient, clean, and scalable technological solutions. Passionate about logical problem-solving, systems development, and database administration.">Analista Programador enfocado en construir soluciones tecnológicas eficientes, limpias y escalables. Me apasiona la resolución de problemas lógicos, el desarrollo de sistemas y la administración de bases de datos.</p>
         <div class="tags-container">
             <div class="tags">
                 <span>Python</span>
@@ -44,17 +51,19 @@
         </div>
     </section>
 
+    <!-- Proyectos Destacados -->
     <section id="proyectos">
-        <h2 class="section-title">Proyectos Destacados</h2>
+        <h2 class="section-title" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
         <div class="proyectos-grid">
 
+            <!-- Tarjeta 1: Portafolio -->
             <div class="card">
                 <div>
                     <div class="card-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Portafolio Web Personal</h3>
-                    <p>Sitio web profesional diseñado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador.</p>
+                    <h3 data-es="Portafolio Web Personal" data-en="Personal Web Portfolio">Portafolio Web Personal</h3>
+                    <p data-es="Sitio web profesional diseñado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador." data-en="Professional website designed to showcase my projects, technical skills, and background as a Programmer Analyst.">Sitio web profesional diseñado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador.</p>
                     <div class="tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -64,17 +73,18 @@
                 </div>
                 <div class="card-btns">
                     <a href="https://claudiopizarro12313.github.io" target="_blank" class="btn btn-sm">Demo</a>
-                    <a href="https://github.com/claudiopizarro12313/claudiopizarro12313.github.io" target="_blank" class="btn-outline btn-sm"><i class="fab fa-github"></i> Código</a>
+                    <a href="https://github.com/claudiopizarro12313/claudiopizarro12313.github.io" target="_blank" class="btn-outline btn-sm" data-es="Código" data-en="Code"><i class="fab fa-github"></i> Código</a>
                 </div>
             </div>
 
+            <!-- Tarjeta 2: Sistema Veterinaria -->
             <div class="card">
                 <div>
                     <div class="card-icon">
                         <i class="fas fa-notes-medical"></i>
                     </div>
-                    <h3>Sistema de Gestión Veterinaria</h3>
-                    <p>Aplicación para la gestión de fichas clínicas, control de pacientes, atenciones médicas y registro de vacunación.</p>
+                    <h3 data-es="Sistema de Gestión Veterinaria" data-en="Veterinary Management System">Sistema de Gestión Veterinaria</h3>
+                    <p data-es="Aplicación para la gestión de fichas clínicas, control de pacientes, atenciones médicas y registro de vacunación." data-en="Application for managing medical records, patient control, medical consultations, and vaccination tracking.">Aplicación para la gestión de fichas clínicas, control de pacientes, atenciones médicas y registro de vacunación.</p>
                     <div class="tags">
                         <span>Python</span>
                         <span>SQLite</span>
@@ -82,26 +92,32 @@
                     </div>
                 </div>
                 <div class="card-btns">
-                    <a href="https://github.com/claudiopizarro12313/veterinaria" target="_blank" class="btn-outline btn-sm btn-full"><i class="fab fa-github"></i> Código Fuente</a>
+                    <a href="https://github.com/claudiopizarro12313/veterinaria" target="_blank" class="btn-outline btn-sm btn-full" data-es="Código Fuente" data-en="Source Code"><i class="fab fa-github"></i> Código Fuente</a>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- Contacto -->
     <section id="contacto" class="contacto-section">
-        <h2 class="section-title">Contacto</h2>
-        <p>¿Tienes alguna consulta o propuesta laboral? ¡Escríbeme!</p>
+        <h2 class="section-title" data-es="Contacto" data-en="Contact">Contacto</h2>
+        <p data-es="¿Tienes alguna consulta o propuesta laboral? ¡Escríbeme!" data-en="Have a question or job proposal? Write to me!">¿Tienes alguna consulta o propuesta laboral? ¡Escríbeme!</p>
+
         <div class="btn-group">
-            <a href="mailto:claudiopizarro440@gmail.com" class="btn"><i class="fas fa-envelope"></i> Enviar Correo</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=claudiopizarro440@gmail.com&su=Contacto%20desde%20Portafolio" target="_blank" class="btn" data-es="Enviar Correo Directo" data-en="Send Direct Email">
+                <i class="fas fa-paper-plane"></i> Enviar Correo Directo
+            </a>
             <a href="https://github.com/claudiopizarro12313" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Claudio Pizarro | Analista Programador. Todos los derechos reservados.</p>
+        <p data-es="&copy; 2026 Claudio Pizarro | Analista Programador. Todos los derechos reservados." data-en="&copy; 2026 Claudio Pizarro | Programmer Analyst. All rights reserved.">&copy; 2026 Claudio Pizarro | Analista Programador. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Script de lógica -->
     <script src="main.js"></script>
 </body>
 </html>
