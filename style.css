@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
 }
 
+/* Barra de Navegación */
 nav {
     display: flex;
     justify-content: space-between;
@@ -45,8 +46,27 @@ nav {
     color: #64dfdf;
 }
 
+/* Botón de Idioma ES/EN */
+.lang-btn {
+    background: transparent;
+    border: 2px solid #64dfdf;
+    color: #64dfdf;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: #64dfdf;
+    color: #0b132b;
+}
+
+/* Sección Hero / Inicio */
 .hero {
-    padding: 5rem 5%;
+    padding: 6rem 5%;
     text-align: center;
     background: linear-gradient(180deg, #1c2541 0%, #0b132b 100%);
 }
@@ -56,7 +76,7 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-.hero h1 span {
+.hero h1 .highlight {
     color: #64dfdf;
 }
 
@@ -66,8 +86,15 @@ nav {
     margin-bottom: 1rem;
 }
 
+.hero p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #c5c6c7;
+}
+
+/* Botones Principales */
 .btn-group {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -81,6 +108,9 @@ nav {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn:hover {
@@ -95,6 +125,9 @@ nav {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .btn-outline:hover {
@@ -104,30 +137,35 @@ nav {
 
 .btn-sm {
     font-size: 0.85rem;
+    padding: 0.6rem 1.2rem;
 }
 
 .btn-full {
     width: 100%;
-    text-align: center;
+    justify-content: center;
 }
 
+/* Estructura de Secciones */
 section {
-    padding: 4rem 5%;
+    padding: 5rem 5%;
 }
 
 h2.section-title {
     text-align: center;
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #64dfdf;
 }
 
 .sobre-mi-texto {
     max-width: 800px;
-    margin: 0 auto 1.5rem auto;
+    margin: 0 auto 2rem auto;
     text-align: center;
+    color: #c5c6c7;
+    font-size: 1.05rem;
 }
 
+/* Etiquetas de Habilidades (Tags) */
 .tags-container {
     text-align: center;
 }
@@ -142,13 +180,14 @@ h2.section-title {
 
 .tags span {
     background: #1c2541;
-    padding: 0.3rem 0.8rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 15px;
     font-size: 0.85rem;
     color: #48cae4;
     border: 1px solid #3a506b;
 }
 
+/* Grilla de Proyectos */
 .proyectos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -158,7 +197,7 @@ h2.section-title {
 .card {
     background: #1c2541;
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 1.8rem;
     border: 1px solid #3a506b;
     display: flex;
     flex-direction: column;
@@ -172,18 +211,18 @@ h2.section-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     border: 1px solid #3a506b;
 }
 
 .card-icon i {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #64dfdf;
 }
 
 .card h3 {
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .card p {
@@ -194,17 +233,20 @@ h2.section-title {
 .card-btns {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
+/* Sección de Contacto */
 .contacto-section {
     text-align: center;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem;
     background: #1c2541;
     color: #8d99ae;
     border-top: 1px solid #3a506b;
+    font-size: 0.9rem;
 }
