@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Desarrollo & Análisis de Sistemas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fuentes Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">&lt;Dev/&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#about" data-es="Sobre mí" data-en="About Me">Sobre mí</a></li>
+            <li><a href="#projects" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+            <li><a href="#contact" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        </ul>
+        <button id="lang-toggle" class="lang-btn">EN</button>
+    </nav>
+
+    <!-- Header / Sobre Mí -->
+    <header id="about" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="assets/perfil.jpg" alt="Foto de Perfil" id="profile-img">
+            </div>
+            <div class="hero-text">
+                <span class="badge" data-es="Desarrollador de Software" data-en="Software Developer">Desarrollador de Software</span>
+                <h1 data-es="Hola, soy un Apasionado por la Tecnología" data-en="Hi, I'm Passionate About Technology">Hola, soy un Apasionado por la Tecnología</h1>
+                <p data-es="Estudiante y desarrollador enfocado en el análisis de sistemas, arquitectura de software y resolución de problemas reales a través del código." 
+                   data-en="Student and developer focused on systems analysis, software architecture, and solving real-world problems through code.">
+                    Estudiante y desarrollador enfocado en el análisis de sistemas, arquitectura de software y resolución de problemas reales a través del código.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-es="Ver Proyectos" data-en="View Projects">Ver Proyectos</a>
+                    <a href="#contact" class="btn btn-secondary" data-es="Contactar" data-en="Contact Me">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Proyectos (Plantillas Limpias) -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</h2>
+        <p class="section-subtitle" data-es="Una muestra del software y soluciones que he diseñado y programado." data-en="A showcase of software and solutions I have designed and built.">Una muestra del software y soluciones que he diseñado y programado.</p>
+
+        <div class="projects-grid">
+            
+            <!-- Proyecto 1 (Plantilla) -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="assets/proyecto1.png" alt="Nombre del Proyecto 1">
+                </div>
+                <div class="project-content">
+                    <div class="tags">
+                        <span class="tag">Tecnología 1</span>
+                        <span class="tag">Tecnología 2</span>
+                    </div>
+                    <h3 data-es="Nombre del Proyecto 1" data-en="Project 1 Name">Nombre del Proyecto 1</h3>
+                    <p data-es="Descripción breve de lo que hace tu proyecto, el problema que resuelve o la tecnología que utilizaste."
+                       data-en="Brief description of what your project does, the problem it solves, or the stack used.">
+                        Descripción breve de lo que hace tu proyecto, el problema que resuelve o la tecnología que utilizaste.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/tu-usuario/tu-repo" class="btn-link" target="_blank" data-es="Ver Repositorio &rarr;" data-en="View Repository &rarr;">Ver Repositorio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 (Plantilla) -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <img src="assets/proyecto2.png" alt="Nombre del Proyecto 2">
+                </div>
+                <div class="project-content">
+                    <div class="tags">
+                        <span class="tag">Tecnología 1</span>
+                        <span class="tag">Tecnología 2</span>
+                    </div>
+                    <h3 data-es="Nombre del Proyecto 2" data-en="Project 2 Name">Nombre del Proyecto 2</h3>
+                    <p data-es="Descripción breve de lo que hace tu proyecto, el problema que resuelve o la tecnología que utilizaste."
+                       data-en="Brief description of what your project does, the problem it solves, or the stack used.">
+                        Descripción breve de lo que hace tu proyecto, el problema que resuelve o la tecnología que utilizaste.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/tu-usuario/tu-repo" class="btn-link" target="_blank" data-es="Ver Repositorio &rarr;" data-en="View Repository &rarr;">Ver Repositorio &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title" data-es="¿Hablamos?" data-en="Let's Connect">¿Hablamos?</h2>
+        <p data-es="Estoy abierto a oportunidades de trabajo, colaboraciones y proyectos interesantes." data-en="I am open to job opportunities, collaborations, and interesting projects.">Estoy abierto a oportunidades de trabajo, colaboraciones y proyectos interesantes.</p>
+        <div class="contact-links">
+            <a href="https://github.com/tu-usuario" target="_blank" class="btn btn-secondary">GitHub</a>
+            <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="btn btn-secondary">LinkedIn</a>
+            <a href="mailto:tu-correo@email.com" class="btn btn-primary" data-es="Enviar Correo" data-en="Send Email">Enviar Correo</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 - <span data-es="Diseñado y construido con dedicación" data-en="Designed and built with passion">Diseñado y construido con dedicación</span></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
