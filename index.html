@@ -3,17 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Claudio Pizarro | Analista Programador</title>
-    <!-- Hoja de estilos vinculada correctamente -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- FontAwesome para iconos -->
+    <title>Claudio Pizarro | Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0b132b; color: #ffffff; line-height: 1.6; }
+        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 5%; background: #1c2541; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #64dfdf; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; }
+        .nav-links a { color: #ffffff; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .nav-links a:hover { color: #64dfdf; }
+        .hero { padding: 5rem 5%; text-align: center; background: linear-gradient(180deg, #1c2541 0%, #0b132b 100%); }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+        .hero h1 span { color: #64dfdf; }
+        .hero h2 { font-size: 1.5rem; color: #8d99ae; margin-bottom: 1rem; }
+        .btn-group { margin-top: 1.5rem; display: flex; justify-content: center; gap: 1rem; }
+        .btn { padding: 0.8rem 1.5rem; background: #64dfdf; color: #0b132b; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: #48cae4; }
+        .btn-outline { padding: 0.8rem 1.5rem; border: 2px solid #64dfdf; color: #64dfdf; border-radius: 5px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .btn-outline:hover { background: #64dfdf; color: #0b132b; }
+        section { padding: 4rem 5%; }
+        h2.section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #64dfdf; }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+        .tags span { background: #1c2541; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; color: #48cae4; border: 1px solid #3a506b; }
+        .proyectos-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #1c2541; border-radius: 10px; padding: 1.5rem; border: 1px solid #3a506b; display: flex; flex-direction: column; justify-content: space-between; }
+        .card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .card p { color: #c5c6c7; font-size: 0.95rem; }
+        .card-btns { display: flex; gap: 1rem; margin-top: 1rem; }
+        footer { text-align: center; padding: 2rem; background: #1c2541; color: #8d99ae; border-top: 1px solid #3a506b; }
+    </style>
 </head>
 <body>
 
-    <!-- Navegación -->
-    <nav class="navbar">
-        <div class="logo">&lt;ClaudioPizarro /&gt;</div>
+    <nav>
+        <div class="logo">&lt;Portafolio/&gt;</div>
         <ul class="nav-links">
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -22,55 +46,40 @@
         </ul>
     </nav>
 
-    <!-- Sección Inicio -->
     <header id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Hola, soy <span>Claudio Pizarro</span></h1>
-            <h2>Analista Programador</h2>
-            <p>Especializado en desarrollo de software, gestión de sistemas y administración de bases de datos.</p>
-            <div class="hero-buttons">
-                <a href="#proyectos" class="btn">Ver Proyectos</a>
-                <a href="#contacto" class="btn-outline">Contacto</a>
-            </div>
+        <h1>Hola, soy <span>Claudio Pizarro</span></h1>
+        <h2>Analista Programador</h2>
+        <p>Especializado en desarrollo de software, gestión de sistemas y administración de bases de datos.</p>
+        <div class="btn-group">
+            <a href="#proyectos" class="btn">Ver Proyectos</a>
+            <a href="#contacto" class="btn-outline">Contacto</a>
         </div>
     </header>
 
-    <!-- Sección Sobre Mí -->
-    <section id="sobre-mi" class="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <div class="sobre-mi-container">
-            <div class="foto-perfil">
-                <img src="assets/perfil.jpg" alt="Foto de Claudio Pizarro">
-            </div>
-            <div class="texto-sobre-mi">
-                <p>Analista Programador enfocado en construir soluciones tecnológicas eficientes, limpias y escalables. Me apasiona la resolución de problemas lógicos, el desarrollo de sistemas y la administración de bases de datos.</p>
-                
-                <div class="habilidades">
-                    <h3>Habilidades Técnicas:</h3>
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>SQL / bases de datos</span>
-                        <span>HTML5 & CSS3</span>
-                        <span>JavaScript</span>
-                        <span>Git & GitHub</span>
-                        <span>Windows Server</span>
-                    </div>
-                </div>
+    <section id="sobre-mi">
+        <h2 class="section-title">Sobre Mí</h2>
+        <p style="max-width: 800px; margin: 0 auto 1.5rem auto; text-align: center;">Analista Programador enfocado en construir soluciones tecnológicas eficientes, limpias y escalables. Me apasiona la resolución de problemas lógicos, el desarrollo de sistemas y la administración de bases de datos.</p>
+        <div style="text-align: center;">
+            <div class="tags" style="justify-content: center;">
+                <span>Python</span>
+                <span>SQL / Bases de Datos</span>
+                <span>HTML5 & CSS3</span>
+                <span>JavaScript</span>
+                <span>Git & GitHub</span>
+                <span>Windows Server</span>
             </div>
         </div>
     </section>
 
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="proyectos">
-        <h2>Proyectos Destacados</h2>
+    <section id="proyectos">
+        <h2 class="section-title">Proyectos Destacados</h2>
         <div class="proyectos-grid">
 
-            <!-- Proyecto 1: Portafolio Web Personal -->
-            <div class="proyecto-card">
-                <div class="proyecto-img">
-                    <img src="assets/portafolio-preview.jpg" alt="Vista previa Portafolio Web">
-                </div>
-                <div class="proyecto-info">
+            <div class="card">
+                <div>
+                    <div style="background: #0b132b; height: 140px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 1px solid #3a506b;">
+                        <i class="fas fa-laptop-code" style="font-size: 2.5rem; color: #64dfdf;"></i>
+                    </div>
                     <h3>Portafolio Web Personal</h3>
                     <p>Sitio web profesional diseñado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador.</p>
                     <div class="tags">
@@ -79,19 +88,18 @@
                         <span>JavaScript</span>
                         <span>GitHub Pages</span>
                     </div>
-                    <div class="proyecto-botones">
-                        <a href="https://claudiopizarro12313.github.io" target="_blank" class="btn">Ver Sitio Demo</a>
-                        <a href="https://github.com/claudiopizarro12313/claudiopizarro12313.github.io" target="_blank" class="btn-outline"><i class="fab fa-github"></i> Código</a>
-                    </div>
+                </div>
+                <div class="card-btns">
+                    <a href="https://claudiopizarro12313.github.io" target="_blank" class="btn" style="font-size: 0.85rem;">Demo</a>
+                    <a href="https://github.com/claudiopizarro12313/claudiopizarro12313.github.io" target="_blank" class="btn-outline" style="font-size: 0.85rem;"><i class="fab fa-github"></i> Código</a>
                 </div>
             </div>
 
-            <!-- Proyecto 2: Sistema Veterinario (Plantilla lista para enlazar) -->
-            <div class="proyecto-card">
-                <div class="proyecto-img">
-                    <img src="assets/veterinaria-preview.jpg" alt="Vista previa Sistema Veterinaria">
-                </div>
-                <div class="proyecto-info">
+            <div class="card">
+                <div>
+                    <div style="background: #0b132b; height: 140px; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border: 1px solid #3a506b;">
+                        <i class="fas fa-notes-medical" style="font-size: 2.5rem; color: #64dfdf;"></i>
+                    </div>
                     <h3>Sistema de Gestión Veterinaria</h3>
                     <p>Aplicación para la gestión de fichas clínicas, control de pacientes, atenciones médicas y registro de vacunación.</p>
                     <div class="tags">
@@ -99,32 +107,27 @@
                         <span>SQLite</span>
                         <span>Arquitectura de Software</span>
                     </div>
-                    <div class="proyecto-botones">
-                        <!-- Reemplaza este enlace cuando crees el repositorio del proyecto -->
-                        <a href="https://github.com/claudiopizarro12313/veterinaria" target="_blank" class="btn-outline"><i class="fab fa-github"></i> Código Fuente</a>
-                    </div>
+                </div>
+                <div class="card-btns">
+                    <a href="https://github.com/claudiopizarro12313/veterinaria" target="_blank" class="btn-outline" style="font-size: 0.85rem; width: 100%; text-align: center;"><i class="fab fa-github"></i> Código Fuente</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna consulta o propuesta laboral? ¡Escríbeme!</p>
-        <div class="contacto-links">
+    <section id="contacto" style="text-align: center;">
+        <h2 class="section-title">Contacto</h2>
+        <p style="margin-bottom: 1.5rem;">¿Tienes alguna consulta o propuesta laboral? ¡Escríbeme!</p>
+        <div class="btn-group">
             <a href="mailto:claudiopizarro12313@gmail.com" class="btn"><i class="fas fa-envelope"></i> Enviar Correo</a>
             <a href="https://github.com/claudiopizarro12313" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </section>
 
-    <!-- Pie de página -->
     <footer>
         <p>&copy; 2026 Claudio Pizarro | Analista Programador. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Script de JavaScript vinculado correctamente -->
-    <script src="js/main.js"></script>
 </body>
 </html>
