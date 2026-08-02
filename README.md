@@ -1,6 +1,6 @@
 # 💻 Portafolio Web - Claudio Pizarro
 
-¡Bienvenido/a a mi portafolio web personal! Este repositorio contiene el código fuente de mi sitio web profesional, desarrollado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador.
+¡Bienvenido/a  a mi portafolio web personal! Este repositorio contiene el código fuente de mi sitio web profesional, desarrollado para presentar mis proyectos, habilidades técnicas y trayectoria como Analista Programador.
 
 🌐 **Ver sitio web en vivo:** [https://claudiopizarro12313.github.io](https://claudiopizarro12313.github.io)
 
